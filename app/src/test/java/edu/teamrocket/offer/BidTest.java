@@ -1,0 +1,16 @@
+package edu.teamrocket.offer;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BidTest {
+
+    @Test
+    void constructorTest() {
+        Bid bid = new Bid("9.5", 282);
+        assertEquals(282, bid.value());
+        assertEquals("9.5", bid.size());
+    }
+
+}
