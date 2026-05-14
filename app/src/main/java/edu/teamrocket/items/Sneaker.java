@@ -1,14 +1,21 @@
 package edu.teamrocket.items;
 
-public class Sneaker {
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.teamrocket.offer.Offer;
+
+public class Sneaker implements Item {
 
     private String style;
     private String name;
     private int sale;
     private int ask;
     private int bid;
+    private List<Offer> offers = new ArrayList<>();
 
-    Sneaker(String style, String name) {
+    Sneaker(
+            String style, String name) {
         this.style = style;
         this.name = name;
     }
@@ -43,6 +50,21 @@ public class Sneaker {
 
     public void setAsk(int ask) {
         this.ask = ask;
+    }
+
+    @Override
+    public void add(Offer offer) {
+        this.offers.add(offer);
+    }
+
+    @Override
+    public List<Offer> offers() {
+        return this.offers;
+    }
+
+    @Override
+    public String toString() {
+        return this.getName() + "\n \t \t" + this.getStyle();
     }
 
 }
