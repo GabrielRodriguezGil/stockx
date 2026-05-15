@@ -6,6 +6,11 @@ import edu.teamrocket.items.Item;
 import edu.teamrocket.offer.Offer;
 
 public class LastSale implements Criteria {
+
+    LastSale() {
+
+    }
+
     @Override
     public List<Offer> checkCriteria(Item item) {
         Criteria sales = new Sales();
