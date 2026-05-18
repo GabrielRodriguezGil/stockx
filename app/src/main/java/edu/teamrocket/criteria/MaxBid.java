@@ -9,7 +9,7 @@ import edu.teamrocket.offer.Offer;
 
 public class MaxBid implements Criteria {
 
-    MaxBid() {
+    public MaxBid() {
 
     }
 

@@ -11,7 +11,7 @@ public class Max implements Criteria {
     private Criteria criteria;
     private Criteria otherCriteria;
 
-    Max(Criteria cr1, Criteria cr2) {
+    public Max(Criteria cr1, Criteria cr2) {
         this.criteria = cr1;
         this.otherCriteria = cr2;
     }

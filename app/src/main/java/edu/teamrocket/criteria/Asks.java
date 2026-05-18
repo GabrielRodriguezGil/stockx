@@ -9,7 +9,7 @@ import edu.teamrocket.offer.Offer;
 
 public class Asks implements Criteria {
 
-    Asks() {
+    public Asks() {
     }
 
     @Override

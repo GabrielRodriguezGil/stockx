@@ -9,7 +9,7 @@ import edu.teamrocket.offer.Offer;
 
 public class MinAsk implements Criteria {
 
-    MinAsk() {
+    public MinAsk() {
 
     }
 

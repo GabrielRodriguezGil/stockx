@@ -9,7 +9,7 @@ public class AndCriteria implements Criteria {
     private Criteria criteria;
     private Criteria otherCriteria;
 
-    AndCriteria(Criteria crt1, Criteria crt2) {
+    public AndCriteria(Criteria crt1, Criteria crt2) {
         this.criteria = crt1;
         this.otherCriteria = crt2;
     }

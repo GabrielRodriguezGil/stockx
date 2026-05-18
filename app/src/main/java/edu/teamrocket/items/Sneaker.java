@@ -14,7 +14,7 @@ public class Sneaker implements Item {
     private int bid;
     private List<Offer> offers = new ArrayList<>();
 
-    Sneaker(
+    public Sneaker(
             String style, String name) {
         this.style = style;
         this.name = name;

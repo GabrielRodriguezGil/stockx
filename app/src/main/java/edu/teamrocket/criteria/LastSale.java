@@ -7,7 +7,7 @@ import edu.teamrocket.offer.Offer;
 
 public class LastSale implements Criteria {
 
-    LastSale() {
+    public LastSale() {
 
     }
 

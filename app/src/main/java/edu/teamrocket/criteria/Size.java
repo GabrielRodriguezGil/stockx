@@ -9,7 +9,7 @@ import edu.teamrocket.offer.Offer;
 public class Size implements Criteria {
     private String size = "";
 
-    Size(String size) {
+    public Size(String size) {
         this.size = size;
     }
 

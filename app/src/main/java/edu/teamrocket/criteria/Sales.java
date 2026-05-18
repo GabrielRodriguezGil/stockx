@@ -9,7 +9,7 @@ import edu.teamrocket.offer.Sale;
 
 public class Sales implements Criteria {
 
-    Sales() {
+    public Sales() {
     }
 
     @Override

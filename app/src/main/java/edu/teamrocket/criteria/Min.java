@@ -11,7 +11,7 @@ public class Min implements Criteria {
     private Criteria criteria;
     private Criteria otherCriteria;
 
-    Min(Criteria cr1, Criteria cr2) {
+    public Min(Criteria cr1, Criteria cr2) {
         this.criteria = cr1;
         this.otherCriteria = cr2;
     }
