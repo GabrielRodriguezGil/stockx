@@ -14,7 +14,10 @@ public class Asks implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        return item.offers().stream().filter(Ask.class::isInstance).collect(Collectors.toList());
+        return item.offers().stream()
+                .filter(Ask.class::isInstance)
+                .sorted()
+                .collect(Collectors.toList());
     }
 
 }

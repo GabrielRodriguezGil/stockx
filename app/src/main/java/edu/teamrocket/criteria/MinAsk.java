@@ -15,7 +15,7 @@ public class MinAsk implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        Optional<Offer> minAsk = item.offers().stream().filter(Ask.class::isInstance).max(Offer::compareTo);
+        Optional<Offer> minAsk = item.offers().stream().filter(Ask.class::isInstance).min(Offer::compareTo);
 
         return minAsk.isPresent() ? List.of(minAsk.get()) : List.of();
     }
