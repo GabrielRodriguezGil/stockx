@@ -14,6 +14,9 @@ public class Bids implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        return item.offers().stream().filter(Bid.class::isInstance).collect(Collectors.toList());
+        return item.offers().stream()
+                .filter(Bid.class::isInstance)
+                .sorted(java.util.Comparator.reverseOrder())
+                .collect(Collectors.toList());
     }
 }
