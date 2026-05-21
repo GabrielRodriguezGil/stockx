@@ -1,6 +1,6 @@
 package edu.teamrocket.offer;
 
-public interface Offer {
+public interface Offer extends Comparable<Offer> {
 
     public String size();
 
